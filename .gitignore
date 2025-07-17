@@ -1,0 +1,52 @@
+# --- ARCHIVOS GENERALES ---
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# --- ANGULAR (frontend/) ---
+frontend/node_modules/
+frontend/dist/
+frontend/.angular/
+frontend/.output/
+frontend/.cache/
+frontend/coverage/
+frontend/.env
+frontend/.env.*
+frontend/.vscode/
+frontend/.idea/
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/pnpm-debug.log*
+
+# --- .NET (backend/) ---
+backend/bin/
+backend/obj/
+backend/.vs/
+backend/.vscode/
+backend/.idea/
+backend/Publish/
+backend/*.user
+backend/*.suo
+backend/*.userosscache
+backend/*.sln.docstates
+backend/*.Publish.xml
+backend/packages/
+backend/project.lock.json
+backend/project.fragment.lock.json
+backend/artifacts/
+backend/*.nupkg
+backend/*.snupkg
+
+# Rider / ReSharper
+backend/*.DotSettings.user
+
+# --- VARIABLES DE ENTORNO Y CONFIGURACIÓN SENSIBLE ---
+.env
+*.env
+*.env.*
+*.env.local
+*.env.production
+*.env.development
