@@ -1,25 +1,24 @@
-# --- ARCHIVOS GENERALES ---
-# Archivos del sistema operativo
+# --- ARCHIVOS GENERALES DEL SISTEMA ---
 .DS_Store
 Thumbs.db
 desktop.ini
 $RECYCLE.BIN/
 
-# --- ANGULAR (frontend/) ---
-frontend/node_modules/
-frontend/dist/
-frontend/.angular/
-frontend/.output/
-frontend/.cache/
-frontend/coverage/
-frontend/.env
-frontend/.env.*
-frontend/.vscode/
-frontend/.idea/
-frontend/npm-debug.log*
-frontend/yarn-debug.log*
-frontend/yarn-error.log*
-frontend/pnpm-debug.log*
+# --- ANGULAR (frontend/web-frontend/) ---
+frontend/web-frontend/node_modules/
+frontend/web-frontend/dist/
+frontend/web-frontend/.angular/
+frontend/web-frontend/.output/
+frontend/web-frontend/.cache/
+frontend/web-frontend/coverage/
+frontend/web-frontend/.env
+frontend/web-frontend/.env.*
+frontend/web-frontend/.vscode/
+frontend/web-frontend/.idea/
+frontend/web-frontend/npm-debug.log*
+frontend/web-frontend/yarn-debug.log*
+frontend/web-frontend/yarn-error.log*
+frontend/web-frontend/pnpm-debug.log*
 
 # --- .NET (backend/) ---
 backend/bin/
@@ -50,3 +49,4 @@ backend/*.DotSettings.user
 *.env.local
 *.env.production
 *.env.development
+
