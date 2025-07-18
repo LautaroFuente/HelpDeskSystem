@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MesaDeAyuda.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+94b4e134a6724932c0f8034bd0dc86721c7c1316")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4f90c4720c88481a6f2d7c81d5cf0b3d974cffe0")]
 [assembly: System.Reflection.AssemblyProductAttribute("MesaDeAyuda.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MesaDeAyuda.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
