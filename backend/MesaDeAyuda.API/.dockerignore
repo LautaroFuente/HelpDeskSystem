@@ -1,7 +1,18 @@
+# Carpetas de build
 bin/
 obj/
+
+# Configuraciones del editor
 .vscode/
-*.user
+.idea/
 *.suo
-*.md
+*.user
+
+# Archivos de logs y otros
 *.log
+*.md
+
+# Archivos temporales o locales
+*.db
+*.DS_Store
+Thumbs.db

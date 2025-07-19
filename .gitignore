@@ -21,23 +21,23 @@ frontend/web-frontend/yarn-error.log*
 frontend/web-frontend/pnpm-debug.log*
 
 # --- .NET (backend/) ---
-backend/bin/
-backend/obj/
-backend/.vs/
-backend/.vscode/
-backend/.idea/
-backend/Publish/
-backend/*.user
-backend/*.suo
-backend/*.userosscache
-backend/*.sln.docstates
-backend/*.Publish.xml
-backend/packages/
-backend/project.lock.json
-backend/project.fragment.lock.json
-backend/artifacts/
-backend/*.nupkg
-backend/*.snupkg
+backend/MesaDeAyuda.API/bin/
+backend/MesaDeAyuda.API/obj/
+backend/MesaDeAyuda.API/.vs/
+backend/MesaDeAyuda.API/.vscode/
+backend/MesaDeAyuda.API/.idea/
+backend/MesaDeAyuda.API/Publish/
+backend/MesaDeAyuda.API/*.user
+backend/MesaDeAyuda.API/*.suo
+backend/MesaDeAyuda.API/*.userosscache
+backend/MesaDeAyuda.API/*.sln.docstates
+backend/MesaDeAyuda.API/*.Publish.xml
+backend/MesaDeAyuda.API/packages/
+backend/MesaDeAyuda.API/project.lock.json
+backend/MesaDeAyuda.API/project.fragment.lock.json
+backend/MesaDeAyuda.API/artifacts/
+backend/MesaDeAyuda.API/*.nupkg
+backend/MesaDeAyuda.API/*.snupkg
 
 # Rider / ReSharper
 backend/*.DotSettings.user
