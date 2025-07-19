@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  backend:
+    image: mesadeayuda-backend:1.0
+    container_name: mesadeayuda-api
+    ports:
+      - "5000:80"
+
+  frontend:
+    image: mesadeayuda-frontend:1.0
+    container_name: mesadeayuda-frontend
+    ports:
+      - "4200:80"
