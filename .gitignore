@@ -51,3 +51,7 @@ backend/*.DotSettings.user
 *.env.development
 
 .vs/
+
+# VS y VSCode
+.vs/
+.vscode/
