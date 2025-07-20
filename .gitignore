@@ -50,3 +50,4 @@ backend/*.DotSettings.user
 *.env.production
 *.env.development
 
+.vs/
