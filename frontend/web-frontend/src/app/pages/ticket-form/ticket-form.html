@@ -1,0 +1,19 @@
+<app-title title="Agregar un Ticket"></app-title>
+
+<form [formGroup]="formTicket" (ngSubmit)="onSubmit()">
+  <app-input-form
+    [label]="'Titulo'"
+    [id]="'title'"
+    [formName]="'title'"
+    [group]="formTicket"
+  ></app-input-form>
+
+  <app-input-form
+    [label]="'Descripcion'"
+    [id]="'description'"
+    [formName]="'description'"
+    [group]="formTicket"
+  ></app-input-form>
+
+  <app-button-submit></app-button-submit>
+</form>
