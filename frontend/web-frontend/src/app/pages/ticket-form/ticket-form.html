@@ -8,12 +8,24 @@
     [group]="formTicket"
   ></app-input-form>
 
+  @if (formTicket.get('title')?.errors?.['required']) {
+  <app-error-form message="El titulo es requerido"></app-error-form>
+  } @if (formTicket.get('title')?.errors?.['maxlength']) {
+  <app-error-form message="El maximo de caracteres es 50"></app-error-form>
+  }
+
   <app-input-form
     [label]="'Descripcion'"
     [id]="'description'"
     [formName]="'description'"
     [group]="formTicket"
   ></app-input-form>
+
+  @if (formTicket.get('description')?.errors?.['required']) {
+  <app-error-form message="La descripcion es requerida"></app-error-form>
+  } @if (formTicket.get('description')?.errors?.['maxlength']) {
+  <app-error-form message="El maximo de caracteres es 100"></app-error-form>
+  }
 
   <app-button-submit></app-button-submit>
 </form>

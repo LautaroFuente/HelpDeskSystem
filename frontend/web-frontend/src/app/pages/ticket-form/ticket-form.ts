@@ -11,10 +11,18 @@ import {
 } from '@angular/forms';
 import { Subject, takeUntil } from 'rxjs';
 import { TicketService } from '../../services/ticket-service';
+import { ErrorForm } from './components/error-form/error-form';
 
 @Component({
   selector: 'app-ticket-form',
-  imports: [InputForm, ButtonSubmit, Title, ReactiveFormsModule, FormsModule],
+  imports: [
+    InputForm,
+    ButtonSubmit,
+    Title,
+    ReactiveFormsModule,
+    FormsModule,
+    ErrorForm,
+  ],
   templateUrl: './ticket-form.html',
   styleUrl: './ticket-form.css',
 })
@@ -29,8 +37,8 @@ export class TicketForm implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.formTicket = this.fb.group({
-      title: ['', Validators.required],
-      description: ['', Validators.required],
+      title: ['', [Validators.required, Validators.maxLength(50)]],
+      description: ['', [Validators.required, Validators.maxLength(100)]],
     });
   }
 
