@@ -16,8 +16,8 @@ namespace MesaDeAyuda.API.Services
         {
             var ticket = new Ticket
             {
-                Title = createTicketDTO.title,
-                Description = createTicketDTO.description,
+                Title = createTicketDTO.Title,
+                Description = createTicketDTO.Description,
                 CreatedDate = DateTime.UtcNow,
                 State = "No Hecho"
             };

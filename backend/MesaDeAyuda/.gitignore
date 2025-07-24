@@ -1,0 +1,33 @@
+## Ignore build results
+bin/
+obj/
+
+## Ignore user-specific files
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Ignore Rider IDE files
+.idea/
+
+## Ignore VS Code settings
+.vscode/
+
+## Ignore test results
+TestResults/
+
+## Ignore packages (if not using PackageReference)
+packages/
+
+## Ignore logs
+*.log
+
+## Ignore compiled DLLs and EXEs
+*.dll
+*.exe
+
+## Ignore .NET Core CLI global tools
+.tools/
+
+## Ignore EF Core migrations snapshot (optional)
+**/Migrations/*Snapshot.cs
