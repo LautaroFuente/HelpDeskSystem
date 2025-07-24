@@ -6,10 +6,10 @@ namespace MesaDeAyuda.API.DTOs
     {
         [Required(ErrorMessage = "Title is required")]
         [StringLength(50, ErrorMessage = "Title cannot exceed 50 characters")]
-        public string title { get; set; }
+        public string Title { get; set; }
 
         [Required(ErrorMessage = "Description is required")]
         [StringLength(100, ErrorMessage = "Description cannot exceed 100 characters")]
-        public string description { get; set; }
+        public string Description { get; set; }
     }
 }
