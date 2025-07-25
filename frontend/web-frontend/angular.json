@@ -21,6 +21,7 @@
                 "input": "public"
               }
             ],
+            "polyfills": ["src/polyfills.ts"],
             "styles": [
               "src/custom-theme.scss",
               "src/styles.css"
@@ -82,10 +83,14 @@
             ],
             "styles": [
               "src/styles.css"
-            ]
+            ],
+            "polyfills": ["src/polyfills.ts"]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
