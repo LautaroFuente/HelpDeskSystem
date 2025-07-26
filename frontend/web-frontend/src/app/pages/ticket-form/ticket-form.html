@@ -1,5 +1,6 @@
 <app-title title="Agregar un Ticket"></app-title>
 
+@if (formTicket ) {
 <form [formGroup]="formTicket" (ngSubmit)="onSubmit()">
   <app-input-form
     [label]="'Titulo'"
@@ -29,3 +30,4 @@
 
   <app-button-submit></app-button-submit>
 </form>
+}
