@@ -16,6 +16,6 @@ export class InputForm {
   @Input() group!: FormGroup;
 
   get control(): FormControl {
-    return this.group.get(this.formName) as FormControl;
+    return this.group?.get(this.formName) as FormControl;
   }
 }

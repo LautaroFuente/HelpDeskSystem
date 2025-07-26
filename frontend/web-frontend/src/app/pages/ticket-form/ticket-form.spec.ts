@@ -3,7 +3,7 @@ import { TicketForm } from './ticket-form';
 import { ReactiveFormsModule } from '@angular/forms';
 import { By } from '@angular/platform-browser';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
-
+import 'zone.js';
 
 describe('TicketFormComponent', () => {
   let component: TicketForm;
@@ -22,8 +22,8 @@ describe('TicketFormComponent', () => {
   it('should render form with all fields', () => {
     const compiled = fixture.nativeElement as HTMLElement;
 
-    expect(compiled.querySelector('input[formControlName="title"]')).toBeTruthy();
-    expect(compiled.querySelector('input[formControlName="description"]')).toBeTruthy();
+    expect(compiled.querySelector('input#title')).toBeTruthy();
+    expect(compiled.querySelector('input#description')).toBeTruthy();
     expect(compiled.querySelector('button')).toBeTruthy();
   });
 
@@ -39,8 +39,12 @@ describe('TicketFormComponent', () => {
   it('should emit submit event if form is valid', () => {
     spyOn(component, 'onSubmit');
 
-    const titleInput = fixture.debugElement.query(By.css('input[formControlName="title"]')).nativeElement;
-    const descInput = fixture.debugElement.query(By.css('input[formControlName="description"]')).nativeElement;
+    const titleInput = fixture.debugElement.query(
+      By.css('input#title')
+    ).nativeElement;
+    const descInput = fixture.debugElement.query(
+      By.css('input#description')
+    ).nativeElement;
 
     titleInput.value = 'Título válido';
     titleInput.dispatchEvent(new Event('input'));
@@ -56,4 +60,3 @@ describe('TicketFormComponent', () => {
     expect(component.onSubmit).toHaveBeenCalled();
   });
 });
-
